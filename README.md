@@ -11,7 +11,11 @@ Users now has the abilty to book a session on the go without having the hassle o
 IntelliJ IDEA 2016.2.2
 Android Studio 2.1.1
 hosting: IBM LinuxOne Coummunity Cloud.
+IBMLinuxONE Community Cloud
+
 
 #Languages
 Java 
 SQL
+
+
