@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.gymapp.rick.gymapp_android.activities.LogIn">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOGIN"
+        android:id="@+id/txtLogo"
+        android:layout_below="@+id/section_label"
+        android:layout_toRightOf="@+id/section_label"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:shadowColor="#6ae0d6"
+        android:textStyle="bold|italic"
+        android:textSize="20pt" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:elevation="5dp"
+        android:focusableInTouchMode="false"
+        android:textSize="10pt"
+        android:layout_alignBottom="@+id/txtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:minWidth="90pt"
+        android:minHeight="15pt"
+        android:background="#ffffff"
+        android:layout_below="@+id/txtLogo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Number"
+        android:elevation="5dp"
+        android:focusableInTouchMode="false"
+        android:textSize="10pt"
+        android:layout_below="@+id/lblEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:minWidth="90pt"
+        android:minHeight="15pt"
+        android:background="#ffffff"
+        android:layout_alignBottom="@+id/lblPassword"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/txtLogo"
+        android:layout_toEndOf="@+id/txtLogo"
+        android:onClick="validateUser"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:onClick="goBack"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtLogo"
+        android:layout_alignEnd="@+id/txtLogo" />
+
+</RelativeLayout>
